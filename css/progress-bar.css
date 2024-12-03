@@ -1,0 +1,63 @@
+
+  .skills-container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .skill {
+    margin-bottom: 15px;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+  }
+  
+  .progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* Адаптивність */
+  }
+  
+  .progress {
+    height: 100%;
+    background: linear-gradient(to right, #9911cb, #c325fc);
+    border-radius: 20px;
+    transition: width 0.4s ease;
+  }
+  
+  /* Адаптивність */
+  @media (max-width: 480px) {
+    .skills-container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .progress-bar {
+      height: 15px; /* Менший розмір прогрес-бару для мобільних */
+    }
+  
+    .skill-name {
+      font-size: 0.9rem;
+    }
+  }
+  
